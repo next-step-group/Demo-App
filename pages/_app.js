@@ -4,7 +4,7 @@ import Layout from '../components/Layout';
 
 export async function reportWebVitals(metric) {
   const body = JSON.stringify(metric);
-  const url = '/api/NSMetrics.js';
+  const url = '/api/NSMetrics';
 
   // Use `navigator.sendBeacon()` if available, falling back to `fetch()`.
   console.log('BODY IS', body);
