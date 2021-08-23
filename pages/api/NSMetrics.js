@@ -18,34 +18,8 @@ const handler = nc().post((req, res) => {
   results.metrics[0][name] = value; //.toFixed(2);
 
   fs.writeFileSync("metrics.json", JSON.stringify(results, null, 4));
-
-  // fs.appendFileSync("metrics.json", JSON.stringify(data), (err) => {
-  //   console.log("err");
-  // });
+  
   res.status(200).json({ test: "test worked" });
 });
 
 export default handler;
-
-// {
-// 	"metrics": [
-// 		{
-// 			"FCP": "1.2s",
-// 			"CLS": "0.85",
-// 			"LCP": "2.5s"
-// 		}
-// 	]
-// }
-// JSON.stringify(data) + ", ";
-
-//Name: FCP
-//value: num
-
-//name: CLS
-//value: num
-
-//name: TTFB
-//value: num
-
-//name: LCP
-//value: num
