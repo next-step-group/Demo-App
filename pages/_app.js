@@ -1,6 +1,7 @@
 import "../styles/globals.css";
 import Layout from "../components/Layout";
 import { reportWebVitals } from "next-step-npm";
+import Image from 'next/image';
 
 // export async function reportWebVitals(metric) {
 //   const body = JSON.stringify(metric);
