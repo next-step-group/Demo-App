@@ -7,7 +7,9 @@ module.exports = {
           fs: 'empty'
         }
       }
-  
       return config
-    }
+    },
+    images: {
+      domains: ["images.unsplash.com"],
+    },
   }
