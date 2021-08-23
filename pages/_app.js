@@ -1,21 +1,18 @@
-import '../styles/globals.css';
-import Layout from '../components/Layout';
-import Image from 'next/image'
+import "../styles/globals.css";
+import Layout from "../components/Layout";
+import { reportWebVitals } from "next-step-npm";
 
+// export async function reportWebVitals(metric) {
+//   const body = JSON.stringify(metric);
+//   const url = '/api'; -----> this file holds handler function
 
-export async function reportWebVitals(metric) {
-  const body = JSON.stringify(metric);
-  const url = '/api';
+//   // Use `navigator.sendBeacon()` if available, falling back to `fetch()`.
+//   console.log('BODY IS', body);
+//   await fetch(url, { body, method: 'POST', keepalive: true })
 
-  // Use `navigator.sendBeacon()` if available, falling back to `fetch()`.
-  console.log('BODY IS', body);
-  await fetch(url, { body, method: 'POST', keepalive: true })
-  
-}
-
+// }
 
 function MyApp({ Component, pageProps }) {
-
   return (
     <Layout>
       <Component {...pageProps} />
@@ -28,8 +25,7 @@ function MyApp({ Component, pageProps }) {
       <Image src="https://images.unsplash.com/photo-1471922694854-ff1b63b20054?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aGVhdmVufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80" height='666' width='1000'></Image>
       <Image src="https://images.unsplash.com/photo-1533228876829-65c94e7b5025?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGZyZWV8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80" height='667' width='1000'></Image>
     </Layout>
-  )
+  );
 }
-
-
-export default MyApp
+export { reportWebVitals };
+export default MyApp;
