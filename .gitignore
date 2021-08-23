@@ -18,7 +18,7 @@
 # misc
 .DS_Store
 *.pem
-metrics.json
+
 
 # debug
 npm-debug.log*
