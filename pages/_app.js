@@ -1,11 +1,11 @@
 import "../styles/globals.css";
 import Layout from "../components/Layout";
-import { reportWebVitals } from "next-step-npm";
+import { reportWebVitals } from "next-step-metrics";
 import Image from 'next/image';
 
 // export async function reportWebVitals(metric) {
 //   const body = JSON.stringify(metric);
-//   const url = '/api'; -----> this file holds handler function
+//   const url = '/api/NextStepMetrics'
 
 //   // Use `navigator.sendBeacon()` if available, falling back to `fetch()`.
 //   console.log('BODY IS', body);
